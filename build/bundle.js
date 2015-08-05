@@ -52,38 +52,40 @@
 
 	var heroController = superheroApp.controller('heroController', ['$scope', function($scope) {
 	  $scope.secret = 'Psst.. Did you know Bruce Wayne is Batman?';
-	}])
+	  $scope.newHeroName = 'Ant Man';
 
+	// var heroController = superheroApp.controller('heroController', ['$scope', '$http', function($scope, $http) {
+	//   $scope.secret = 'Psst.. Did you know Bruce Wayne is Batman?';
 
+	//   $scope.newSuperhero = 'Placeholder';
 
+	//   // $scope.heroes = [];
+	//   // $scope.errors = [];
 
-
-	// var notesApp = angular.module('notesApp', []);
-
-	// var notesController = notesApp.controller('notesController', ['$scope', function($scope) {
-	//   $scope.greeting = 'hello world';
-	//   $scope.alertGreeting = function() {
-	//     alert($scope.greeting);
-	//   };
-	// }]) //$scope is a service we are injecting into our controller.
-
-	// var anotherController = notesApp.controller('anotherController', ['$scope', function($scope) {
-	//   $scope.anotherValue = 'some other value';
-	// }])
-
-
-
-
-
-	// var foodTruckApp = angular.module('foodTruckApp', []);
-
-	// var truckController = foodTruckApp.controller('truckController', ['$scope', function($scope) {
-	//   $scope.desc = 'This is an app to rate food trucks';
-	//   $scope.newFoodTruckName = 'World-Famous Glazed Sushi Tacos';
-	//   $scope.alertTruck = function() {
-	//     alert(this.newFoodTruckName);
-	//   };
+	//   // $scope.create = function(hero) {
+	//   //   $http.post('/api/data', hero)
+	//   //     .then(function(res) {
+	//   //       $scope.heroes.push(res.data);
+	//   //       hero = null;
+	//   //     }, function(res) {
+	//   //       console.log(res.data);
+	//   //       $scope.errors.push(res.data)
+	//   //     });
+	//   // };
 	// }]);
+
+
+
+
+
+
+	//var truckController = foodTruckApp.controller('truckController', ['$scope', function($scope) {
+	//  $scope.desc = 'This is an app to rate food trucks';
+	//  $scope.newFoodTruckName = 'World-Famous Glazed Sushi Tacos';
+	//  $scope.alertTruck = function() {
+	//    alert(this.newFoodTruckName);
+	//  };
+	}]);
 
 
 /***/ },
