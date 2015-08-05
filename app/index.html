@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farhad's First Angular App</title>
+</head>
+<!--Credit to Emily Aviva Kapor Mater for giving me the idea to use paragraphs to display the data-->
+<body data-ng-app="superheroApp">
+  <h1>Farhad's First Angular App!</h1>
+  <main data-ng-controller="heroController">
+    <p>{{secret}}</p>
+    <p>Think of a superhero who loves the sciences!</p>
+
+    <form>
+      <label for="newHeroBody">Name: </label>
+      <input type="text" required name="newHeroBody" data-ng-model="newHeroName">
+    </form>
+
+    <p>
+      You entered: <em>{{newHeroName}}</em>
+    </p>
+  </main>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
